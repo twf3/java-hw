@@ -8,7 +8,6 @@ public class ex3 {
     }
 }
 
-
-// C:\Users\kseni>cd C:\Users\kseni\IdeaProjects\untitled\src
-// C:\Users\kseni\IdeaProjects\untitled\src>javac ru\mirea\lab1\ex3.java
-// C:\Users\kseni\IdeaProjects\untitled\src>java ru.mirea.lab1.ex3 значени1 значение2
+/*C:\Users\kseni>cd C:\Users\kseni\IdeaProjects\untitled\src
+C:\Users\kseni\IdeaProjects\untitled\src>javac ru\mirea\lab1\ex3.java
+C:\Users\kseni\IdeaProjects\untitled\src>java ru.mirea.lab1.ex3 значени1 значение2 */
