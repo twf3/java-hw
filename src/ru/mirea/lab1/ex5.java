@@ -10,4 +10,4 @@ public class ex5 {
 
 /*cd C:\Users\kseni\IdeaProjects\ untitled\src
 javac ru\mirea\lab1\ex5.java
-java ru.mirea.lab1.ex5 значениe1 значение2 */
+java ru.mirea.lab1.ex5 значениe1 значение2 123 */
