@@ -1,7 +1,5 @@
 package ru.mirea.lab6;
 
-import javax.naming.Name;
-
 public interface Nameable {
     String getName();
 }
