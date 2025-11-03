@@ -41,7 +41,6 @@ class Student {
         return "Student{id=" + id + ", name=" + name + ", birthDate=" + formattedBirthDate("full") + "}";
     }
 
-    // Геттеры и сеттеры
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
     public Date getBirthDate() { return birthDate; }

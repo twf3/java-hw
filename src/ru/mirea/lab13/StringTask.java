@@ -1,7 +1,6 @@
 package ru.mirea.lab13;
 
-public class Task1 {
-
+public class StringTask {
     public static void analyzeString(String str) {
 
         System.out.println("2. последний символ: '" + str.charAt(str.length() - 1) + "'");

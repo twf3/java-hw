@@ -1,7 +1,6 @@
 package ru.mirea.lab9;
 
 public class Task3 {
-    // Сортировка слиянием
     public static void mergeSort(Student[] students, int left, int right) {
         if (left < right) {
             int mid = left + (right - left) / 2;
@@ -20,7 +19,6 @@ public class Task3 {
         Student[] leftArray = new Student[n1];
         Student[] rightArray = new Student[n2];
 
-        // Копируем данные во временные массивы
         for (int i = 0; i < n1; i++) {
             leftArray[i] = students[left + i];
         }
@@ -28,7 +26,6 @@ public class Task3 {
             rightArray[j] = students[mid + 1 + j];
         }
 
-        // Сливаем временные массивы
         int i = 0, j = 0, k = left;
 
         while (i < n1 && j < n2) {
@@ -42,7 +39,7 @@ public class Task3 {
             k++;
         }
 
-        // Копируем оставшиеся элементы
+        // оставшиеся элементы
         while (i < n1) {
             students[k] = leftArray[i];
             i++;
@@ -56,9 +53,7 @@ public class Task3 {
         }
     }
 
-    // Объединение двух отсортированных списков
     public static Student[] mergeLists(Student[] list1, Student[] list2) {
-        // Сначала сортируем оба списка
         mergeSort(list1, 0, list1.length - 1);
         mergeSort(list2, 0, list2.length - 1);
 
@@ -66,7 +61,6 @@ public class Task3 {
 
         int i = 0, j = 0, k = 0;
 
-        // Сливаем два отсортированных массива
         while (i < list1.length && j < list2.length) {
             if (list1[i].compareTo(list2[j]) <= 0) {
                 result[k] = list1[i];

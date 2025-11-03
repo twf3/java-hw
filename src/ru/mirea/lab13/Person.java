@@ -43,14 +43,5 @@ public class Person {
     public String getName() { return name; }
     public String getPatronymic() { return patronymic; }
 
-    public static void main(String[] args) {
-        // Тестирование класса
-        Person person1 = new Person("Иванов", "Иван", "Иванович");
-        Person person2 = new Person("Иванов", "Иван", "");
-        Person person3 = new Person("Иванов", "", "");
 
-        System.out.println(person1.getFullName());
-        System.out.println(person2.getFullName());
-        System.out.println(person3.getFullName());
-    }
 }
