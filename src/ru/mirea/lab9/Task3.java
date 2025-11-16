@@ -7,7 +7,6 @@ public class Task3 {
 
             mergeSort(students, left, mid);
             mergeSort(students, mid + 1, right);
-
             merge(students, left, mid, right);
         }
     }
@@ -72,7 +71,7 @@ public class Task3 {
             k++;
         }
 
-        // Добавляем оставшиеся элементы
+        // оставшиеся элементы
         while (i < list1.length) {
             result[k] = list1[i];
             i++;
