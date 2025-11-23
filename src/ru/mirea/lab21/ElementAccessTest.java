@@ -14,7 +14,7 @@ public class ElementAccessTest {
             System.out.println("Попытка получить элемент с индексом -1: " +
                     ElementAccess.getElementByIndex(numbers, -1));
         } catch (IndexOutOfBoundsException e) {
-            System.out.println("Поймано исключение: " + e.getMessage());
+            System.out.println("Ошибка: " + e.getMessage());
         }
     }
 }
