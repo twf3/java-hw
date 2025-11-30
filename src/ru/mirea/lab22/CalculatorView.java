@@ -20,7 +20,6 @@ public class CalculatorView {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
 
-        // Панель отображения
         JPanel displayPanel = new JPanel(new BorderLayout());
 
         displayField = new JTextField("0", 20);
@@ -40,11 +39,9 @@ public class CalculatorView {
         displayPanel.add(displayField, BorderLayout.NORTH);
         displayPanel.add(scrollPane, BorderLayout.CENTER);
 
-        // Панель кнопок
         JPanel buttonPanel = new JPanel(new GridLayout(5, 4, 5, 5));
         buttonPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
-        // Инициализация кнопок
         initializeButtons(buttonPanel);
 
         frame.add(displayPanel, BorderLayout.NORTH);
@@ -58,30 +55,25 @@ public class CalculatorView {
     private void initializeButtons(JPanel buttonPanel) {
         numberButtons = new JButton[10];
 
-        // Кнопки 7-9
         for (int i = 7; i <= 9; i++) {
             numberButtons[i] = new JButton(String.valueOf(i));
             buttonPanel.add(numberButtons[i]);
         }
 
-        // Кнопка деления
         operatorButtons = new JButton[4];
         operatorButtons[0] = new JButton("/");
         operatorButtons[0].setBackground(new Color(255, 200, 200));
         buttonPanel.add(operatorButtons[0]);
 
-        // Кнопки 4-6
         for (int i = 4; i <= 6; i++) {
             numberButtons[i] = new JButton(String.valueOf(i));
             buttonPanel.add(numberButtons[i]);
         }
 
-        // Кнопка умножения
         operatorButtons[1] = new JButton("*");
         operatorButtons[1].setBackground(new Color(255, 200, 200));
         buttonPanel.add(operatorButtons[1]);
 
-        // Кнопки 1-3
         for (int i = 1; i <= 3; i++) {
             numberButtons[i] = new JButton(String.valueOf(i));
             buttonPanel.add(numberButtons[i]);
