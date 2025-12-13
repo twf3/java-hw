@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class Task1 {
     public static void main(String[] args) {
+        // пример  email  user123@example.ru
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите строку: ");
         String input = scanner.nextLine();

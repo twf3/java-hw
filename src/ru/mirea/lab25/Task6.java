@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 public class Task6 {
     public static void main(String[] args) {
         String[] testEmails = {
-                "user@example.com",
+                "user@example.ru",
                 "root@localhost",
                 "myhost@@com.ru",
                 "@my.ru",
